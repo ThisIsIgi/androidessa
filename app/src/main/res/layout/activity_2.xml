@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity2">
+
+    <TextView
+        android:id="@+id/rown_1"
+        android:layout_width="96dp"
+        android:layout_height="50dp"
+        android:text="pierwsze"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/drugie_rown"
+        android:layout_width="97dp"
+        android:layout_height="41dp"
+        android:text="drugie"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rown_1" />
+
+    <TextView
+        android:id="@+id/trzecie_rown"
+        android:layout_width="98dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="8dp"
+        android:text="trzecie"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/drugie_rown" />
+
+    <TextView
+        android:id="@+id/czwarte_rown"
+        android:layout_width="95dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="24dp"
+        android:text="czwarte"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/trzecie_rown" />
+
+    <TextView
+        android:id="@+id/piate_rown"
+        android:layout_width="91dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:text="piate"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/czwarte_rown" />
+
+    <EditText
+        android:id="@+id/pierwszy_wynik"
+        android:layout_width="202dp"
+        android:layout_height="41dp"
+        android:ems="20"
+        android:inputType="number"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/rown_1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/drugi_wynik"
+        android:layout_width="203dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toEndOf="@+id/drugie_rown"
+        app:layout_constraintTop_toBottomOf="@+id/pierwszy_wynik" />
+
+    <EditText
+        android:id="@+id/trzeci_wynik"
+        android:layout_width="207dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/trzecie_rown"
+        app:layout_constraintTop_toBottomOf="@+id/drugi_wynik" />
+
+    <EditText
+        android:id="@+id/czwarty_wynik"
+        android:layout_width="198dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.438"
+        app:layout_constraintStart_toEndOf="@+id/czwarte_rown"
+        app:layout_constraintTop_toBottomOf="@+id/trzeci_wynik" />
+
+    <EditText
+        android:id="@+id/piaty_wynik"
+        android:layout_width="188dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.439"
+        app:layout_constraintStart_toEndOf="@+id/piate_rown"
+        app:layout_constraintTop_toBottomOf="@+id/czwarty_wynik" />
+
+    <Button
+        android:id="@+id/verifyButton"
+        android:layout_width="214dp"
+        android:layout_height="116dp"
+        android:text="Verify"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/piaty_wynik" />
+</androidx.constraintlayout.widget.ConstraintLayout>
